@@ -54,7 +54,6 @@ class ViewController: UIViewController
     }
     else
     {
-      currentQuestion = questionBank.list.count - 1
       let alert = UIAlertController(title: "End of quiz", message: "Restart the quiz ?", preferredStyle: .alert)
       let restartAction = UIAlertAction(title: "Restart",
                                         style: .default,
