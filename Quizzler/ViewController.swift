@@ -33,6 +33,11 @@ class ViewController: UIViewController
     if checkAnswer(userAnswer: sender.tag == 1)
     {
       currentScore += 1
+      ProgressHUD.showSuccess("Correct")
+    }
+    else
+    {
+      ProgressHUD.showError("Wrong!")
     }
     nextQuestion()
   }
